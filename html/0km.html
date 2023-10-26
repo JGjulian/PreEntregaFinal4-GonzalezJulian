@@ -9,28 +9,23 @@
 </head>
 
 <body>
-    <header class="navbar navbar-expand-lg encabezado">
-        <div class="container-fluid">
-            <a href="/index.html">
-                <img class="logo" src="../img/logo.png" alt="logo de la empresa">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <nav class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../html/0km.html">0km</a></li>
-                    <li><a href="../html/usados.html">Usados</a></li>
-                    <li><a href="../html/contacto.html">Contacto</a></li>
-                    <li><a href="../html/sucursales.html">Sucursales</a></li>
-                </ul>
-            </nav>
+    <header class="header">
+        <div class="logo">
+            <img src="../img/logo.png" alt="Logo Empresa">
         </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../html/0km.html">0km</a></li>
+                <li><a href="../html/usados.html">Usados</a></li>
+                <li><a href="../html/contacto.html">Contacto</a></li>
+                <li><a href="../html/sucursales.html">Sucursales</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="btn"><button>Contact</button></a>
     </header>
 
-    <main>
+    <main class="containerPosicion">
         <h1> 0km </h1>
         <p>
             ¡Descubre las emocionantes opciones de financiamiento que tenemos disponibles para que adquieras tu vehículo
@@ -43,7 +38,7 @@
         </p>
 
         <h2> Conoce Nuestros 0km </h2>
-        <div class="contenedor0km col-xl-4 col-md-6 col-sm-12">
+        <div class="contenedor0km">
             <img class="img0km" src="../img/Toyotacorolla0km.webp" alt="foto vehiculo corolla">
             <p>
                 Informacion Toyota Corolla 0km
