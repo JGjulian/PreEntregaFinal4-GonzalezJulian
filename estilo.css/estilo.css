@@ -1,5 +1,4 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Nunito Sans', sans-serif;
@@ -12,12 +11,10 @@
 /* body */
 
 body {
-    background-color: #fff59d;
-}
-
-body {
     background-color: beige;
 }
+
+
 
 /* header */
 
@@ -89,47 +86,28 @@ body {
 
 /* main */
 
-.caja {
-    text-align: center;
-    margin: auto;
+.hero {
     display: flex;
     justify-content: center;
-    /* Centra horizontalmente */
     align-items: center;
-    /* Centra verticalmente */
-    min-height: 100vh;
-    /* Establece una altura mínima de la ventana */
-    flex-wrap: wrap;
-    /* Permite que los contenedores se envuelvan a medida que el espacio se reduce */
-}
-
-.containerPosicion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-
-    min-height: 100vh;
+    height: 100vh;
     margin: 0;
-    /* Puede eliminar el margen entre las columnas si es necesario */
+    padding: 0;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(/img/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
 }
 
-.caja img {
-    max-width: 100%;
-    height: auto;
+.hero h1 {
+    color: white;
+    position: absolute; /* Posicionamiento absoluto */
+    top: 50%; /* Alineación vertical al 50% */
+    left: 50%; /* Alineación horizontal al 50% */
+    transform: translate(-50%, -50%); /* Corrección para centrar el texto */
 }
-
-main {
-    margin: 20px;
-    padding: 20px;
-}
-
-h1 {
-    text-align: center;
-    text-decoration: underline;
-    margin: 20px 0px;
-}
-
 
 /* footer */
 
@@ -148,6 +126,13 @@ footer {
 }
 
 /* 0km */
+
+.containerPosicion h1 {
+    text-align: center;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
 
 .contenedor0km {
     margin: 5%;
