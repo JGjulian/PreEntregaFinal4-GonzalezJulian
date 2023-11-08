@@ -1,0 +1,103 @@
+.text-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  
+    h1 {
+      color: #fff;
+      font-size: 40px;
+      text-align: center;
+      text-decoration: underline;
+      margin-bottom: 10px;
+    }
+  
+    p {
+      color: #fff;
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 50px auto 20px;
+    padding: 50px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid $tercercolor;
+    border-radius: 5px;
+  }
+  
+  .btnFormulario {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .contacto23 {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    color: #fff;
+  
+    form {
+      max-width: 600px;
+      margin: 50px auto 20px;
+      padding: 50px;
+    }
+  
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: $segundocolor;
+    }
+  
+    input[type="text"], textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid $tercercolor;
+      border-radius: 5px;
+    }
+  
+    .btnFormulario {
+      background-color: #333;
+      color: $segundocolor;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+  
+    h2 {
+      text-align: center;
+      text-decoration: underline;
+      margin: 20px 0;
+    }
+  
+    p {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+  

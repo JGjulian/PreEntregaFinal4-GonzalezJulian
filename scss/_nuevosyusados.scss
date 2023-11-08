@@ -1,0 +1,90 @@
+.text-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  
+    h1 {
+      color: $segundocolor;
+      font-size: 40px;
+      text-align: center;
+      text-decoration: underline;
+      margin-bottom: 10px;
+    }
+  
+    p {
+      color: $segundocolor;
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  
+    h2 {
+      color: $segundocolor;
+      text-align: center;
+      text-decoration: underline;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  }
+  
+  .containerPosicion h1 {
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  
+  .contenedor0km, .contenedorUsados {
+    margin: 5% auto;
+    border: 2px solid $tercercolor;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 900px;
+    margin: 5% auto;
+  }
+  
+  .img0km, .imgUsados {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .contenedor0km, .contenedorUsados {
+    background-color: $tercercolor;
+    color: $segundocolor;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  
+  .contenedor0km p, .contenedorUsados p {
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+  }
+  
+  h2 {
+    text-align: center;
+    text-decoration: underline;
+    margin: 20px 0px;
+  }
+  
+  p {
+    text-align: center;
+  }
+  

@@ -1,0 +1,18 @@
+.container {
+    width: 80%;
+    margin: 120px auto 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .containerMap {
+    width: 80%;
+    margin: 20px auto;
+  
+    iframe {
+      margin-top: 20px;
+      width: 100%;
+    }
+  }
+  

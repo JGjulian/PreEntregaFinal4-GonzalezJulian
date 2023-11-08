@@ -3,29 +3,42 @@
     padding: 0;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 20px;
+    box-sizing: border-box;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap');
 
 
-/* body */
-
 body {
     background-color: beige;
+    background-image: url(../img/fondo1.jpg);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
+body,
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
 
-
-/* header */
-
+/* HEADER */
 
 .header {
-    background-color: #1b3039;
+    width: 100%;
+    background-color: #333;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 85px;
-    padding: 5px 10%;
+    padding: 10px 5%;
+    position: relative;
+    z-index: 1000;
 }
 
 .header .logo {
@@ -44,11 +57,12 @@ body {
 
 .header .nav-links {
     list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
 .header .nav-links li {
-    display: inline-block;
-    padding: 0 20px;
+    padding: 10px 0;
 }
 
 .header .nav-links li:hover {
@@ -56,10 +70,10 @@ body {
 }
 
 .header .nav-links a {
-    font-size: 700;
+    font-size: 1rem;
     color: #eceff1;
     text-decoration: none;
-
+    white-space: nowrap;
 }
 
 .header .nav-links li a:hover {
@@ -69,7 +83,7 @@ body {
 .header .btn button {
     font-weight: 700;
     color: #1b3039;
-    padding: 9px 25px;
+    padding: 9px 15px;
     background: #eceff1;
     border: none;
     border-radius: 50px;
@@ -77,77 +91,115 @@ body {
     transition: all 0.3s ease 0s;
 }
 
-
 .header .btn button:hover {
     background-color: #e2f1f8;
     color: #ffbc0e;
     transform: scale(1.1);
 }
 
-/* main */
+/* SUCURSALES */
 
-.hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    background-image: linear-gradient(0deg,
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url(/img/fondo1.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center center;
+.container {
+    width: 80%;
+    margin: 120px auto 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
-.hero h1 {
-    color: white;
-    position: absolute; /* Posicionamiento absoluto */
-    top: 50%; /* Alineación vertical al 50% */
-    left: 50%; /* Alineación horizontal al 50% */
-    transform: translate(-50%, -50%); /* Corrección para centrar el texto */
+.containerMap {
+    width: 80%;
+    margin: 20px auto;
 }
 
-/* footer */
-
-
-.footerposicion {
-    bottom: 0;
-
+.containerMap iframe {
+    margin-top: 20px;
+    width: 100%;
 }
+
+/* FOOTER */
 
 footer {
     background-color: #a19c82;
-    margin: 20px;
-    padding: 20px;
-    border-top: 1px solid black;
     text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: 800px;
 }
 
-/* 0km */
+
+.mapa {
+    margin-top: 20vh;
+}
+
+/* 0KM Y USADOS */
+
+.text-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+.text-container h1 {
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+
+.text-container p {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+.text-container h2 {
+    color: #fff;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
 
 .containerPosicion h1 {
     text-align: center;
-    font-size: 25px;
+    font-size: 50px;
     text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
 }
 
-
-.contenedor0km {
-    margin: 5%;
+.contenedor0km,
+.contenedorUsados {
+    margin: 5% auto;
     border: 2px solid #a19c82;
     border-radius: 10px;
-    align-items: center;
+    overflow: hidden;
+    max-width: 900px;
+    margin: 5% auto;
 }
 
-.img0km {
+.img0km,
+.imgUsados {
     display: block;
-    width: 500px;
+    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
-.contenedor0km {
+.contenedor0km,
+.contenedorUsados {
     background-color: #a19c82;
     color: #fff;
     text-align: center;
@@ -157,50 +209,17 @@ footer {
     text-transform: uppercase;
 }
 
-.contenedor0km p {
-    text-align: center;
-    font-size: 15px;
-}
-
-/* Usados */
-
+.contenedor0km p,
 .contenedorUsados p {
     text-align: center;
     font-size: 15px;
 }
 
-.contenedorUsados {
-    margin: 5%;
-    border: 2px solid #a19c82;
-    border-radius: 10px;
-}
-
-.imgUsados {
-    display: block;
-    width: 500px;
-    height: auto;
-}
-
-.contenedorUsados {
-    background-color: #a19c82;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    font-weight: bold;
-    font-size: 18px;
-    text-transform: uppercase;
-
-}
-
-
-
-/* Iframe */
-
 
 iframe {
-    display: block;
-    margin: auto;
-    width: 500px;
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
 }
 
 h2 {
@@ -213,13 +232,12 @@ p {
     text-align: center;
 }
 
-/* formulario */
-
+/* CONTACTO */
 
 form {
     max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 50px auto 20px;
+    padding: 50px;
 }
 
 label {
@@ -247,50 +265,167 @@ textarea {
     font-size: 18px;
     cursor: pointer;
     margin-top: 10px;
-
 }
 
-/*diseño responsive*/
+.contacto23 {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    color: #fff;
+}
 
-@media (max-width:1023px) {
-    /*Header*/
 
+.contacto23 form {
+    max-width: 600px;
+    margin: 50px auto 20px;
+    padding: 50px;
+}
+
+.contacto23 label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.contacto23 input[type="text"],
+.contacto23 textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #a19c82;
+    border-radius: 5px;
+}
+
+.contacto23 .btnFormulario {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.contacto23 h2 {
+    text-align: center;
+    text-decoration: underline;
+    margin: 20px 0;
+}
+
+.contacto23 p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* SUCURSAL */
+.sucursal23 {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    color: #fff;
+}
+
+
+.sucursal23 h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+
+.sucursal23 h2 {
+    text-align: center;
+    text-decoration: underline;
+    margin: 20px 0;
+}
+
+
+.sucursal23 .containerMap {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.sucursal23 .containerMap iframe {
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+.sucursal23 .containerMap iframe.responsive {
+    height: 400px;
+    max-width: 100%;
+}
+
+
+.sucursal23 p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1023px) {
     .header {
         height: auto;
         flex-direction: column;
         text-align: center;
     }
 
-    .contenedor0km .img0km {
-        max-width: 100%;
-        height: auto;
-    }
-
+    .contenedor0km .img0km,
     .contenedorUsados .imgUsados {
         max-width: 100%;
         height: auto;
     }
 
-}
+    .header .nav-links {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
+    .header .nav-links li {
+        padding: 10px 0;
+    }
 
+    .header .btn {
+        margin-top: 10px;
+    }
 
-@media (max-width:768px) {
-    .form {
-        max-width: 100%;
-        height: auto;
+    .nav-links {
+        width: 100%;
+    }
+
+    .nav-links li {
+        display: block;
+        text-align: center;
+        overflow-x: hidden;
+    }
+
+    .nav-links li a {
+        display: block;
+        padding: 10px;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .header {
+        padding: 10px 5%;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0 auto 20px;
     }
 }
 
+@media (max-width: 768px) {
 
-.responsive {
-    max-width: 100%;
-    height: 100%;
-
-}
-
-.containerMap {
-    width: 50vw;
-    margin: auto;
-    height: 400px;
+    .form,
+    .container,
+    form {
+        max-width: 100%;
+    }
 }

@@ -1,0 +1,73 @@
+
+@mixin anclas {
+  text-decoration: none;
+  color: #eceff1;
+}
+
+.header {
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 10px 5%;
+    position: relative;
+    z-index: 1000;
+  
+    .logo {
+      cursor: pointer;
+  
+      img {
+        height: 70px;
+        width: auto;
+        transition: all 0.3s;
+  
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+  
+      li {
+        padding: 10px 0;
+  
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+  
+      a {
+        @include anclas;
+        font-size: 1rem;
+        white-space: nowrap;
+      }
+  
+      li a:hover {
+        color: $primercolor;
+      }
+    }
+  
+    .btn button {
+      font-weight: 700;
+      color: #1b3039;
+      padding: 9px 15px;
+      background: #eceff1;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+  
+      &:hover {
+        background-color: #e2f1f8;
+        color: $primercolor;
+        transform: scale(1.1);
+      }
+    }
+  }
+  
